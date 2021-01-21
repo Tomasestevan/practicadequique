@@ -1,4 +1,4 @@
 # practicadequique 
 
-
-### aguante la verga
+                                         ^  ^                                      
+### esto es solo para practicar gatitos (ㅇㅅㅇ)
