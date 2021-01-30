@@ -1,14 +1,13 @@
+
 package com.company;
 
 class Mascota {
-
-    //atributos
     public String Nombre;
-    public int Patas = 0;
-    public int Peso = 0;
-    public String Tipo;
+    public int Patas;
+    public float Peso; //son gramos
+    public int Velocidad;
+    public Especie Tipo;
 
-    //metodos
     public void agregarPatas(){
         Patas++;
     }
@@ -18,16 +17,16 @@ class Mascota {
     public void comer(){
         Peso++;
     }
-
-    //constructor
-    public Mascota(String nombre, int patas, int peso, String tipo){
+    public float correr(float unosKilometros){
+        float tiempo = unosKilometros / Velocidad;
+        Tipo.correr(unosKilometros, this);
+        return tiempo;
+    }
+    public Mascota(String nombre, int patas, float peso, int velocidad, Especie tipo){
         Nombre = nombre;
         Patas = patas;
         Peso = peso;
+        Velocidad = velocidad;
         Tipo = tipo;
     }
 }
-
-
-
-

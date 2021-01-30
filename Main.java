@@ -1,38 +1,40 @@
 package com.company;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-	Mascota caballo1;
-	caballo1 = new Mascota("Silver", 4,400, "Caballo");
+        Mascota perro1;
+        perro1 = new Mascota("Bobby", 4,40000, 10,new Perro());
 
-	Mascota perro1;
-	perro1 = new Mascota("Bobby", 4,40,"Perro");
+        Mascota caballo1;
+        caballo1 = new Mascota("Horsey",4,5000000, 100,new Caballo());
 
-	Mascota pez1;
-	pez1 = new Mascota("Alberto",0,5,"Pez");
+        Mascota gato1;
+        gato1 = new Mascota("Michifu",4,15000, 7,new Gato());
 
-	Mascota perro2;
-	perro2 = new Mascota("Ayudante De Santa",4,35,"Perro");
+        //Tiempo de corrida lo defino acá para darle un significado al valor del perro.correr y poder acceder desde main
+        float tiempoDeCorrida = perro1.correr(10);
+        System.out.println("Tiempo: " + tiempoDeCorrida + " horas");
+        System.out.println("Peso despues: " + perro1.Peso + " gramos");
 
-	Mascota gato1;
-	gato1 = new Mascota("Bola De Nieve 2",4,20,"Gato");
 
-	List<Mascota> mascotasDeHumano = new ArrayList<Mascota>();
-	mascotasDeHumano.add(perro2);
-	mascotasDeHumano.add(gato1);
+        tiempoDeCorrida = caballo1.correr(100);
+        System.out.println("Tiempo: " + tiempoDeCorrida + " horas");
+        System.out.println("Peso despues: " + caballo1.Peso + " gramos");
 
-	humano homero;
-	homero = new humano("Homero","Simpson",mascotasDeHumano);
 
+        //ArrayList<Mascota> mascotasHomero = new ArrayList<Mascota>();
+        //mascotasHomero.add(pez1);
+        //mascotasHomero.add(new Mascota("Silver", 4,400, "Caballo"));
+
+        //Humano homero;
+        //homero = new Humano("homero", "simpson", mascotasHomero);
+
+        //homero.AgregarMascota(perro1);
+        //homero.SaludarMascotas();
     }
-
-
-
-    }
-
-
-
-
+}
