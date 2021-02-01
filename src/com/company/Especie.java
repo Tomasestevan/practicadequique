@@ -1,5 +1,6 @@
 package com.company;
 
 public interface Especie {
-    public void correr(float kms, Mascota unaMascota);
+                          //no importa lo que escribas aca, solo el float y el mascota
+    public void comocorre(float kms, Mascota unaMascota);
 }

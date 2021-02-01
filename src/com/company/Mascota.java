@@ -17,9 +17,11 @@ class Mascota {
     public void comer(){
         Peso++;
     }
+
+
     public float correr(float unosKilometros){
         float tiempo = unosKilometros / Velocidad;
-        Tipo.correr(unosKilometros, this);
+        Tipo.comocorre(unosKilometros, this);
         return tiempo;
     }
     public Mascota(String nombre, int patas, float peso, int velocidad, Especie tipo){
@@ -28,5 +30,6 @@ class Mascota {
         Peso = peso;
         Velocidad = velocidad;
         Tipo = tipo;
+
     }
 }

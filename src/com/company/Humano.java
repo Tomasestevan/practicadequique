@@ -5,22 +5,31 @@ import java.util.List;
 public class Humano {
     public String Nombre;
     public String Apellido;
-    public ArrayList<Mascota> mascotas;
+    public int Poronga;
+    public Mani Tipo;
 
-    public Humano (String nombre, String apellido, ArrayList<Mascota> unasMascotas){
+    //public ArrayList<Mascota> mascotas;
+    public int achicharrar (int unoscms){
+        Tipo.achicadorDePenes(unoscms, this);
+        return Poronga;
+    }
+
+    public Humano (String nombre, String apellido, int poronga, Mani tipo){
         Nombre = nombre;
         Apellido = apellido;
-        mascotas = unasMascotas;
+        Poronga = poronga;
+        Tipo = tipo;
+        // mascotas = unasMascotas;
     }
 
-    public void AgregarMascota(Mascota unaMascota) {
-        this.mascotas.add(unaMascota);
+    //public void AgregarMascota(Mascota unaMascota) {
+        //this.mascotas.add(unaMascota);
     }
 
-    public void SaludarMascotas () {
+    //public void SaludarMascotas () {
         //JS let unaMascota of mascotas
-        for (Mascota unaMascota:mascotas) {
-            System.out.println("Te quiero: " + unaMascota.Nombre);
-        }
-    }
-}
+        //for (Mascota unaMascota:mascotas) {
+          //  System.out.println("Te quiero: " + unaMascota.Nombre);
+    //    }
+    //}
+//}
